@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=DotGothic16&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DotGothic16&family=Libre+Barcode+128+Text&display=swap');
 
 body {
   background-color: #000000;
@@ -6,7 +6,23 @@ body {
   padding: 0px;
   color: #ffffff;
   text-align: center;
+}
+
+.title, .barcode {
+  padding: 0px;
+  margin: 16px;
+}
+
+.title {
   font-family: 'DotGothic16', sans-serif;
+  letter-spacing: 8px;
+  font-size: 48px;
+}
+
+.barcode {
+  font-family: 'Libre Barcode 128 Text', sans-serif;
+  color: #e02030;
+  font-size: 32px;
 }
 
 img.cat {
