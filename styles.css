@@ -1,8 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=DotGothic16&display=swap');
+
 body {
   background-color: #000000;
   margin: 0px;
   padding: 0px;
   color: #ffffff;
+  text-align: center;
+  font-family: 'DotGothic16', sans-serif;
 }
 
 img.cat {
