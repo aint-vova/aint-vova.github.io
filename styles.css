@@ -1,37 +1,68 @@
-@import url('https://fonts.googleapis.com/css2?family=DotGothic16&family=Libre+Barcode+128+Text&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DotGothic16&family=Libre+Barcode+128+Text&family=Poppins:wght@500&display=swap');
 
 body {
+  background-image: url('./space.png');
+  background-size: 540px 756px;
   background-color: #000000;
+  animation: scrollBackground 20s linear infinite;
   margin: 0px;
   padding: 0px;
   color: #ffffff;
   text-align: center;
+  image-rendering: pixelated;
+}
+
+@keyframes scrollBackground {
+  from { background-position: 0 0; }
+  to { background-position: 0 756px; }
 }
 
 .title, .barcode {
+  margin: calc(24px + 1vw);
   padding: 0px;
-  margin: 16px;
 }
 
 .title {
   font-family: 'DotGothic16', sans-serif;
-  letter-spacing: 8px;
-  font-size: 24px;
+  letter-spacing: calc(14px + 0.75vw);
+  font-size: calc(32px + 0.75vw);
+  color: #ffffff;
+  transform: translateX(calc((14px + 0.75vw) * 0.5));
 }
 
 .barcode {
+  display: inline;
+  padding: 8px;
   font-family: 'Libre Barcode 128 Text', sans-serif;
-  color: #e02030;
-  font-size: 32px;
+  font-size: calc(24px + 1vw);
 }
 
-img.cat {
-    position:absolute;
-    top:0;
-    left:0;
-    right:0;
-    bottom:0;
-    margin:auto;
-    width: 256px;
-    height: 256px;
+@-webkit-keyframes bounce {
+  0% { transform: scale(1, 0.95) }
+  50% { transform: scale(0.95, 1) }
+  100% { transform: scale(1, 0.95) }
+}
+
+@keyframes bounce { 
+  0% { transform: scale(1, 0.95) }
+  50% { transform: scale(0.95, 1) }
+  100% { transform: scale(1, 0.95) }
+}
+
+img.flower {
+  position:absolute;
+  top:0;
+  left:0;
+  right:0;
+  bottom:0;
+  margin:auto;
+  width: calc(128px + 4vw);
+  height: auto;
+  image-rendering: pixelated;
+
+  -webkit-animation: bounce 0.5s infinite ease-in-out;
+  -o-animation: bounce 0.5s infinite ease-in-out;
+  -ms-animation: bounce 0.5s infinite ease-in-out; 
+  -moz-animation: bounce 0.5s infinite ease-in-out; 
+  animation: bounce 0.5s infinite ease-in-out;
 }
