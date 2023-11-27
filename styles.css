@@ -14,13 +14,14 @@ body {
   margin-top: calc(10vh + 5vw);
 }
 
-.narrow {
+.narrowblock {
   font-family: 'Silkscreen', sans-serif;
   font-size: 14px;
   width: clamp(0px, 400px, 75%);
   margin: 24px auto;
   text-align: left;
   padding-left: 8px;
+  border-right: white 1px solid;
 }
 
 .emphasis {
