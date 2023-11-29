@@ -1,0 +1,31 @@
+.socials-container {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .social-button {
+    margin: 8px 16px;
+    padding: 8px 16px;
+    color: rgb(255, 255, 255);
+    font-size: 16px;
+    transition: border 0.1s linear, transform 0.1s linear;
+    text-decoration: none;
+    border: rgb(0, 89, 255, 0) 1px solid;
+    font-family: 'Silkscreen', sans-serif;
+  }
+  
+  .social-button:hover {
+    border: white 1px solid;
+    transform: scale(1.075);
+  }
+  
+  @media (min-width:641px)  {
+  .socials-container {
+    flex-direction: row;
+  }
+  }

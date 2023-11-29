@@ -1,0 +1,54 @@
+.galactic-bg {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-image: url('/images/space_1.png');
+  background-size: 1080px 756px;
+  background-color: #000000;
+  image-rendering: pixelated;
+  animation: scrollBackground1 120s linear infinite;
+  z-index: -3;
+}
+
+.galactic-bg::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: -2;
+  background-image: url('/images/space_2.png');
+  background-size: 1080px 756px;
+  animation: scrollBackground2 50s linear infinite;
+}
+
+.galactic-bg::after {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: -1;
+  background-image: url('/images/space_3.png');
+  background-size: 2160px 1512px;
+  animation: scrollBackground3 40s linear infinite;
+}
+
+@keyframes scrollBackground1 {
+  from { background-position: 0 0; }
+  to { background-position: 0 756px; }
+}
+
+@keyframes scrollBackground2 {
+  from { background-position: 0 0; }
+  to { background-position: 0 756px; }
+}
+
+@keyframes scrollBackground3 {
+  from { background-position: 0 0; }
+  to { background-position: 0 1512px; }
+}

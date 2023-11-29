@@ -1,0 +1,8 @@
+.page {
+    box-sizing: border-box;
+    margin: calc(8vw + 16px) auto;
+    padding: 32px;
+    width: calc(clamp(0px, 100vw - 32px, 1000px));
+    /* border: 2px rgb(0, 0, 255) solid; */
+    text-align: center;
+}
